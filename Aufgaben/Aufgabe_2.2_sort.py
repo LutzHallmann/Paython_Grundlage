@@ -20,6 +20,7 @@ elif c < b:
 
 print("die größte Zahl ist:", str(maxZahl))
 
+# Zweite Möglichkeit mit for Schleife
 zahl = 0
 for x in range(1,4):
     # Wir geben 3 Zahlen ein, nach jeder Eingabe
