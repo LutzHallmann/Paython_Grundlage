@@ -10,7 +10,7 @@ c = int(input("Geben Sie die dritte Zahl ein: "))
 
 print("Der Durchschnitt ist:", str((a + b + c) / 3))
 
-# Zweite Möglichkeit mir for Schleife
+# Zweite Möglichkeit mit for Schleife
 zahl = 0
 for x in range(1,4):
     eingabe = int(input(f"Bitte {x}. Zahl eingeben:"))
