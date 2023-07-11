@@ -105,10 +105,8 @@ zeichenfolge[4]
 | Elemente     | a  | b  | c  | d  | e  | f  |
 | Index hinten | -6 | -5 | -4 | -3 | -2 | -1 |
 
-
+### Teilsequenz:
 ```python
-# Teilsequenz:
-
 # Zwischen einen bestimmten Indexbereich
 zeichenfolge = "abcdefg"
 zeichenfolge[2:5]
