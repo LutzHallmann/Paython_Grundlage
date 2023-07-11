@@ -54,13 +54,15 @@ Es gibt zwei:
 > * Bedingte Ausdrücke
 > Wir haben bei der if-Verzweigung einen Anweisungskopf und einen Codeblock (Anweisungskörper)   <br>
 > 
-> Allgemeine Syntax:  
-> if Bedingung:  
+
+Allgemeine Syntax:  
+```python
+if Bedingung:  
     Anweisung  
     Anweisung 2  
     ...  
     Anweisung n
-
+``` 
 **Beispiel:**
 ```python
 x = 6
