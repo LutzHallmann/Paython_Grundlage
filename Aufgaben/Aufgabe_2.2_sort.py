@@ -13,9 +13,20 @@ c = int(input("Geben Sie die dritte Zahl ein: "))
 
 maxZahl = c
 
-if a > b > c:
+if a >= b >= c:
     maxZahl = a
 elif c < b:
     maxZahl = b
 
 print("die größte Zahl ist:", str(maxZahl))
+
+zahl = 0
+for x in range(1,4):
+    # Wir geben 3 Zahlen ein, nach jeder Eingabe
+    # wird geprüft ob die eingegene Zahl groesser
+    # wie die schon gespeicherte Zahl
+    eingabe = int(input(fBitte {x}. Zahl eingeben:"))
+    if eingabe > zahl:
+        # wenn ja wird die neue eingegebene Zahl uebernommen
+        zahl = eingabe
+print("Die größte Zahl ist:", zahl)
