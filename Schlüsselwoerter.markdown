@@ -3,8 +3,8 @@
 Schlüsselwörter sind für Anweisungen und der Definition der Struktur reserviert und dürfen nicht für Bezeichner verwendet werden.
 
 
-| **False** | **await** | **else**     | **import** | **pass**   | **None** | **break**    | **except** | **in**   | **raise** |
-|-----------|-----------|--------------|------------|------------|----------|--------------|------------|----------|-----------|
-| **True**  | **class** | **finally**  | **is**     | **return** | **and**  | **continue** | **lambda** | **try**  | **as**    |
-| **def**   | **from**  | **nonlocal** | **while**  | **assert** | **del**  | **global**   | **not**    | **with** | **async** |
-| **elif**  | **if**    | **or**       | **yield**  | **match**  | **case** |              |            |          |           |
+|  **False**  |  **await**  |    **else**    |  **import**  |   **pass**   |  **None**  |   **break**    |  **except**  |   **in**   |  **raise**  |
+|:-----------:|:-----------:|:--------------:|:------------:|:------------:|:----------:|:--------------:|:------------:|:----------:|:-----------:|
+|  **True**   |  **class**  |  **finally**   |    **is**    |  **return**  |  **and**   |  **continue**  |  **lambda**  |  **try**   |   **as**    |
+|   **def**   |  **from**   |  **nonlocal**  |  **while**   |  **assert**  |  **del**   |   **global**   |   **not**    |  **with**  |  **async**  |
+|  **elif**   |   **if**    |     **or**     |  **yield**   |  **match**   |  **case**  |                |              |            |             |

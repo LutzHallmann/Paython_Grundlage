@@ -81,7 +81,9 @@ b += v
 ```
 
 ## Wiederholung von Sequenzen
-> "* und *="
+```python
+* und *=
+```
 
 ```python
 3 * "xyz"
