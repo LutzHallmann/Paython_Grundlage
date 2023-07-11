@@ -43,6 +43,46 @@ zahl = int(input("Auszugebende Zeichenkette:"))
 ```
 
 ## Kontrollstrukturen
+Python Anweisungen sind normalerweise einzeilig.  
+Sie werden nicht, wie in vielen anderen Programmiersprachen durch ein Semikolon geschlossen.  
+Mehrzeilige Anweisungen sind erlaubt, wenn ihr Anfang und Ende durch eine Klammer eindeutig hergeht, wenn nicht kann das mit einem Backslash kenntlich gemacht werden.  
+Anweisungen dürfen mit einem Semikolon abgeschlossen werden.  
+Werden mehrere Anweisungen in einer Zeile geschrieben werden diese durch ein Semikolon getrennt.  
+```python
+x = 5; y = 45; s = 4
+```
+
+### Blockelemente
+In jeder Programmiersprachen gibt es Blöcke.  
+Diese werden z.B. in Java durch geschweifte Klammern gekennzeichnet.
+```java
+if(Bedingung){
+    Anweisungen des Block
+    }
+```
+In Python gibt es ebenfalls Blöcke, diese werden mit einem Doppelpunkt eingeleitet ":"  
+Alle weiteren Anweisungen müssen eingerückt werden.  
+Die Klammern, wie in anderen Programmiersprachen entfallen!
+```python
+if Bedingung:
+    Anweisung1
+    ...
+    Anweisung n
+```
+#### Richtig einrücken
+Für das Ausmaß der Einrückung gibt es keine genauen Regeln. I.d.R reicht ein Zeichen,  
+ich empfehle aber mehr als ein Zeichen,  
+der Lesbarkeit wegen. -> Wenn möglich keine Tabulatorzeichen verwenden.  
+Es ist auch folgenden Variante möglich:
+```python
+if Bedingung:Anweisung
+```
+Mehrere Anweisungen:
+```python
+if Bedingung: Anweisung; Anweisung2; Anweisung3
+```
+
+In Python gibt es ebenfalls Blöcke, diese werden
 Kontrollstrukturen ermöglichen es uns den linearen Ablauf eines Programms / Anweisungsfolgen zu durchbrechen.  
 Es gibt zwei:
 * Verzweigungen (Fallunterscheidungen)
@@ -116,6 +156,9 @@ print("x hat de Wert 99" if x == 99 else "x ist ungleich 99")
 ```
 
 ## Schleifen
+Für Schleifenkonstruktionen stehen uns die while-Schleife und die for-Schleife zur Verfügung.  
+Die for-Schleife wird i.d.R. verwendet, wenn wir die Anzahl der Durchgänge kennen.  
+
 ### while-Schleife
 
 **Allegemeine Syntax:** 
@@ -146,4 +189,100 @@ while versuch != zahl:
 
     zaehler = zaehler + 1
 print("Sie haben in ",zaehler, "Versuchen geschafft")
+```
+** Beispiel 2**
+Es solle eine einfachen while - Schleife programmiert werden, welchen die Zahlen von 1 bis 100 ausgibt:
+```python
+n = 100
+# i ist eine Schleifenvariable
+i = 1
+while i <= n:
+    print("Zahl:" + str(i))
+    i = i + 1
+```
+Zeichenketten können nicht mit einem Integer-Wert erweitert werden.  
+Es können immer nur zwei Zeichenketten miteinander verknüpft werden.  
+Daher müssen wir Zahlenwerte immer mit er str() Funktion in einen String-Datentyp wandeln.
+
+#### Break und Continue
+Schleifen kann man mit diesen beiden Befehlen steuern.  
+Mit **break** brechen ich die Schleifen ab.  
+Mit **continue** überspinge ich die Wiederholung (Iteration) und fahre mit der nächsten Wiederholung fort.
+
+```python
+n = 100
+# i ist eine Schleifenvariable
+i = 1
+while i <= n:
+    print("Zahl:" + str(i))
+    # Wenn i ist gleich 50 dann breche die Schleife ab.
+    if i == 50:
+        break
+    i = i + 1
+```
+```python
+n = 100
+# i ist eine Schleifenvariable
+i = 1
+while i <= n:
+    i = i + 1
+    print("Zahl:" + str(i))
+    # Wenn i ist gleich 50 wird DIESER Schleifendurchlauf abgebrochen.
+    # Alle weiteren Schleifendurchläufen werden ganz normal ausgeführt
+    if i == 50:
+        continue    
+```
+Üblicherweise verwendet man die break Anweisung im Zusammenhang mit der if-Anweisung.  
+Bei der continue Anweisung wird der Schleifendurchlauf unterbrochen,  
+dass alle nachfolgenden Anweisungen, die dem continue Befehl innerhalb der Schleife folgen, nicht ausgeführt werden.  
+Der continue-Befehl sort also dafür, dass an den Anfang der Schleife gesprungen wird und die erste Anweisung der Schleife ausgeführt wird.  
+
+### FOR-Schleife
+Die for-Schleife wird i.d.R. verwendet, wenn die Anzahl der Wiederholungen bekannt ist.  
+In Python besitzt diese Schleife die Funktion einer foreach-Schleife.  
+Mit foreach-Schleife bezeichet man eine Schlefe, die ein Array iteriert.  
+Das heißt es werden nacheinander alle Elemente dieser Liste ausgelesen.  
+Um den Schleifenabbruch brauch ich mich nicht zu kümmern, denn dieser ist durch die Anzahl der Elemente dieser Liste / Array gegeben.  
+
+```python
+#Allgemeine Syntax:
+
+for Variable in Sequenz:
+    Anweisung1
+    Anweisung2
+    ...
+    AnweisungN
+```
+**Beispiel**
+```python
+sprachen = ["C","C++","Java","Python"]
+
+for sprache in sprachen:
+    print(sprache)
+```
+
+Python kennt noch einen "else"-Block.  
+Der else-Block wird ausgeführt, nachdem bei der for-Schleife alle Elemente durchlaufen wurden.  
+Auch wenn die List, die durchlaufen werden soll leer ist, und der Schleifenblock gar nicht durchlaufen wurde.
+```python
+for Variable in Sequenz:
+    Anweisung1
+    Anweisung2
+    ...
+    AnweisungN
+else:
+    Anweisung3
+```
+**Beispiel**
+```python
+sprachen = ["C","C++","Java","Python"]
+
+for sprache in sprachen:
+    if sprache == "Python":
+        print("Ich programmiere Python")
+        break
+    print(sprache)
+else:
+    print("Keine Programmierung")
+print("Fertig")
 ```
