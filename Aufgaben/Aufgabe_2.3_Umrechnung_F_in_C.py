@@ -11,5 +11,4 @@ Formel: celsius = 5*(fahr-32)/9
 
 fahr = float(input("Geben Sie die Temperatur in Fahrenheit ein: "))
 
-celsius = 5*(fahr-32)/9
-print("es sind umgerechnet ", str(celsius))
+print("es sind umgerechnet ", 5*(fahr-32)/9, "Grad Cellsius")
