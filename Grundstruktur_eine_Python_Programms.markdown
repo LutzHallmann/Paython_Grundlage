@@ -1,4 +1,4 @@
-# Grundstruktur eines Python Programms
+# Grundstruktur eines Pythonprogramms
 
 Grundsätzlich besteht ein Python Program aus einen Anweisungskopf und einem Anweisungskörper.
 ````python

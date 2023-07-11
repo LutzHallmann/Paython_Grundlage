@@ -1,0 +1,13 @@
+# Module Importieren
+
+```python
+import math
+
+math.sin(4.23)
+
+# Anzeige der enthaltenen Funktionen vom Modul math
+dir(math)
+
+# Anzeige der Hilfe Funktion einer Funktion, in einem Modul
+
+```

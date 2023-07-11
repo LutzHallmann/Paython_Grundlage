@@ -15,4 +15,53 @@ y = ["String1", "String2"]
 z = x + y
 print(z)
 
-## Es können beliebige Datentypen enthalten sein
+> Es können beliebige Datentypen enthalten sein
+
+Listen bieten aber noch einige sehr komfortabel Funktionen
+
+
+
+```python
+# Beispiel einer Liste 
+    einkaufsliste = ["Kartoffeln", "Fisch", "Bananen"]
+
+# Element hinzufügen mit appen() Funktion
+    einkaufsliste.append("Brot")
+    
+# Entfernen von Elementen mit remove()
+    einkaufsliste.remove("Brot")
+
+# Wenn an einer bestimmten Position ein Eintrag eingefügt werden soll
+    # An Position 3 sollen Tomaten eingefügt werden
+    einkaufsliste.insert(3,"Tomaten")
+
+# Element entfernen und gleichzeitig zurückgeben mit der Funktion pop()
+    # Das letzte Elemt entfernen
+    enfE = einkaufsliste.pop()
+
+    # bestimmten Element aus der List entfernen mit Angaben des Index
+    # Das Element an Position 2 entfernen (Achtung wir fangen bei 0 an zu zählen)
+    enfE = einkaufsliste.pop(2)
+
+# Wenn Elemente hizugefügt werden können innerhalb dieser Liste nur einzelne Einträge ergänzt werden.
+# Das heiß: sollen Listenelemente hinzufügen, die mehr als einen 
+    liste = [0,1,2,3,4]
+    liste.extend([8,13,5])
+
+# Laenge einer Liste in einer Variablen Speichern
+    laenge = len(liste)
+
+# Mit der Hilfe der Funktion index() kann ich die Position eines Elemnt innerhalb einer Liste bestimmen.
+
+    s.index(x)
+# Die Funktion gibt uns die Position des gefundenen Elements zurück
+    # es wird der Inhalt von der Position 3 aus der Liste ausgegeben
+    liste.index(3)
+    # Innerhalb der Liste sich und den Index dazu ausgeben
+    position = einkaufsliste.index("Fisch")
+    # Suche nach Fisch aber erst ab der Positon 2
+    position = einkaufsliste.index("Fisch", 2)
+    
+# Wie oft ein Wert in einer Liste vorkommt
+    einkaufsliste.count("Fisch")
+```
