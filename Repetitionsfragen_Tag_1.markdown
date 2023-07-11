@@ -1,7 +1,7 @@
 # Repetitionsfragen Tag 1
 
 1. **Was ist Software?**
-	>A: Alle immateriellen Bestandteile einer Computersystems (Programme und Daten)
+	>A: Alle immateriellen Bestandteile eines Computersystems (Programme und Daten)
 	
 2. **Zu welcher Gruppe von Programmiersprachen gehört Python?**
 	>A: Zu der Gruppe der hybriden Programmiersprache (OOP und prozedural)
