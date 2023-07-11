@@ -8,5 +8,4 @@ Die Inhalte dieser Variablen soll auf der Python-Shell ausgegeben werden.
 z1 = "Neumann"
 z2 = "Peter"
 
-print(z1)
-print(z2)
+print(z1 + z2)

@@ -7,5 +7,7 @@ Geben Sie die Elemente dieser Liste in der Python-Shel aus.
 """
 
 staedte = ["Hamburg", "Freiburg", "Dresden", "Hannover", "Berlin"]
-
 print(staedte)
+
+for stadt in staedte:
+    print(stadt)
