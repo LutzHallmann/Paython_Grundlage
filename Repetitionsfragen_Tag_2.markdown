@@ -3,7 +3,7 @@
 11. **Mit welcher Funktion kann ich ein Element einer Liste hinzufüge**
 	>A: inert() und append()
  
-12. **Mit welcher Syntx kann ich ein Liste definieren?**
+12. **Mit welcher Syntax kann ich eine Liste definieren?**
 	> Mit eckigen Klammern, in denen die Elemente kommagetrennt aufgelistet werden.
 
 13. ** Welche Wirkung hat die >>break<< Anweisung?**
@@ -14,7 +14,7 @@
 	> un es wird in die nächste Wiederholung der Schleife an den Schleifenkopf gesprungen.
 	
 15. **Was bedeutet die >>elif<< Anweisung**
-	> Diese Anweisung ist ein Kurzform von else if.  
+	> Diese Anweisung ist eine Kurzform von else if.  
 	> Damit ist es möglich eine zusätzliche Bedingung zu prüfen  
 	> Wenn die Bedinung zutrifft, werden folgende elif ignoriert
 
@@ -27,7 +27,7 @@
 18. **Mit welcher Funktion kann ich ein Element einer Liste entfernen?**
 	> Mit der remove(/) Funktion
 
-19. Mit welcher Funktion kan ich prüfen, ob sich ein Element in einer Liste befindet?**
+19. Mit welcher Funktion kann ich prüfen, ob sich ein Element in einer Liste befindet?**
     > Mit der index() Funktion
 
 20. Wann verwende ich in der Regel die for-Schleife?**
