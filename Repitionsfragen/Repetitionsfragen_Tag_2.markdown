@@ -16,7 +16,7 @@
 15. **Was bedeutet die >>elif<< Anweisung**
 	> Diese Anweisung ist eine Kurzform von else if.  
 	> Damit ist es möglich eine zusätzliche Bedingung zu prüfen  
-	> Wenn die Bedinung zutrifft, werden folgende elif ignoriert
+	> Wenn die Bedingung zutrifft, werden folgende elif ignoriert
 
 16. **Mit welcher Funktion kann ich die Länge einer Liste ermitteln?**
 	> Mit der len() Funktion
@@ -31,7 +31,7 @@
     > Mit der index() Funktion
 
 20. Wann verwende ich in der Regel die for-Schleife?**
-	> Wenn ich die Anzahl der Wiederholungen kenne.
+	> Wenn, ich die Anzahl der Wiederholungen kenne.
 
 21. Wann verwende ich in der Regel die while-Schleife?**
     > Wenn ich die Anzahl der Wiederholungen nicht kenne
