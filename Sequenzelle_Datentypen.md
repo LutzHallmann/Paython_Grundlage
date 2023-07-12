@@ -1,0 +1,10 @@
+# Sequenzielle Datentypen
+> In anderen Programmiersprachen kenn wir Datentypen für Strings und Listen,  
+> diese werden in Python zu einer Basisklasse **"Sequenzeille Datentypen"** zusammengefasst.  
+> Listen und Tupel haben die Eigenschaft, dass ich die Elemente fortlaufend anordnen kann.  
+> Bei Strings handelt es sich dabei um Buchstaben, Ziffern usw.  
+> Bei List oder Tupeln, handelt es sich um beliebige Objekte.  
+> Bei alles diesen Typen kann ich über einen Index auf ein bestimmtes Objekt / Element zugreifen obj[position].
+
+## Listen
+

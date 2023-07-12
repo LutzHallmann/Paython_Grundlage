@@ -25,7 +25,7 @@ Listen bieten aber noch einige sehr komfortabel Funktionen
 # Beispiel einer Liste 
     einkaufsliste = ["Kartoffeln", "Fisch", "Bananen"]
 
-# Element hinzufügen mit appen() Funktion
+# Element hinzufügen mit append() Funktion
     einkaufsliste.append("Brot")
     
 # Entfernen von Elementen mit remove()
@@ -36,7 +36,7 @@ Listen bieten aber noch einige sehr komfortabel Funktionen
     einkaufsliste.insert(3,"Tomaten")
 
 # Element entfernen und gleichzeitig zurückgeben mit der Funktion pop()
-    # Das letzte Elemt entfernen
+    # Das letzte Element entfernen
     enfE = einkaufsliste.pop()
 
     # bestimmten Element aus der List entfernen mit Angaben des Index
@@ -51,9 +51,9 @@ Listen bieten aber noch einige sehr komfortabel Funktionen
 # Laenge einer Liste in einer Variablen Speichern
     laenge = len(liste)
 
-# Mit der Hilfe der Funktion index() kann ich die Position eines Elemnt innerhalb einer Liste bestimmen.
-
+# Mit der Hilfe der Funktion index() kann ich die Position eines Element innerhalb einer Liste bestimmen.
     s.index(x)
+
 # Die Funktion gibt uns die Position des gefundenen Elements zurück
     # es wird der Inhalt von der Position 3 aus der Liste ausgegeben
     liste.index(3)
