@@ -1,6 +1,6 @@
 # Grundstruktur eines Pythonprogramms
 
-Grundsätzlich besteht ein Python Program aus einen Anweisungskopf und einem Anweisungskörper.
+Grundsätzlich besteht ein Python Program aus einem Anweisungskopf und einem Anweisungskörper.
 ````python
 Anweisungskopf:  
     Anweisung 1
@@ -34,7 +34,7 @@ Kommentar
 ```
 
 ## Eingabefunktion
-Um die Eingabe über die Tastatur entgegenzunehmen, verwenden wir die Inputfunktion
+Um die Eingabe über die Tastatur entgegenzunehmen, verwenden wir die Input-Funktion
 ```python
 name = input("Auszugebende Zeichenkette:")
 
@@ -45,7 +45,7 @@ zahl = int(input("Auszugebende Zeichenkette:"))
 ## Kontrollstrukturen
 Python Anweisungen sind normalerweise einzeilig.  
 Sie werden nicht, wie in vielen anderen Programmiersprachen durch ein Semikolon geschlossen.  
-Mehrzeilige Anweisungen sind erlaubt, wenn ihr Anfang und Ende durch eine Klammer eindeutig hergeht, wenn nicht kann das mit einem Backslash kenntlich gemacht werden.  
+Mehrzeilige Anweisungen sind erlaubt, wenn ihr Anfang und Ende durch eine Klammer eindeutig hergeht, wenn nicht, kann das mit einem Backslash kenntlich gemacht werden.  
 Anweisungen dürfen mit einem Semikolon abgeschlossen werden.  
 Werden mehrere Anweisungen in einer Zeile geschrieben werden diese durch ein Semikolon getrennt.  
 ```python
@@ -72,7 +72,7 @@ if Bedingung:
 #### Richtig einrücken
 Für das Ausmaß der Einrückung gibt es keine genauen Regeln. I.d.R reicht ein Zeichen,  
 ich empfehle aber mehr als ein Zeichen,  
-der Lesbarkeit wegen. -> Wenn möglich keine Tabulatorzeichen verwenden.  
+der Lesbarkeit wegen. → Wenn möglich keine Tabulatorzeichen verwenden.  
 Es ist auch folgenden Variante möglich:
 ```python
 if Bedingung:Anweisung
@@ -86,7 +86,7 @@ In Python gibt es ebenfalls Blöcke, diese werden
 Kontrollstrukturen ermöglichen es uns den linearen Ablauf eines Programms / Anweisungsfolgen zu durchbrechen.  
 Es gibt zwei:
 * Verzweigungen (Fallunterscheidungen)
-* Schleifen (Widerholungen)
+* Schleifen (Wiederholungen)
 
 > Verzweigungen ermöglichen es uns aufgrund einer Bedingung einen Codeblock auszuführen
 > Es gibt zwei Arten von Verzweigungen:
@@ -147,8 +147,8 @@ Damit ist es möglich den Wert einer Variablen oder allgemein die Zuweisung eine
 
 > A if Bedingung else B
 
-Entweder nimmt man den Wert A an, wenn die Bedinung erfüllt ist, oder den Wert B wenn nicht.
-Ich kann auch diese Bedingung nicht nur aus Zuweisung anwenden sondernz.B. auch mit Ausgaben:
+Entweder nimmt man den Wert A an, wenn die Bedingung erfüllt ist, oder den Wert B wenn nicht.
+Ich kann auch diese Bedingung nicht nur aus Zuweisung anwenden, sondern z.B. auch mit Ausgaben:
 
 ```python
 x = 99
@@ -206,8 +206,8 @@ Daher müssen wir Zahlenwerte immer mit er str() Funktion in einen String-Datent
 
 #### Break und Continue
 Schleifen kann man mit diesen beiden Befehlen steuern.  
-Mit **break** brechen ich die Schleifen ab.  
-Mit **continue** überspinge ich die Wiederholung (Iteration) und fahre mit der nächsten Wiederholung fort.
+Mit **break** breche ich die Schleifen ab.  
+Mit **continue** überspringe ich die Wiederholung (Iteration) und fahre mit der nächsten Wiederholung fort.
 
 ```python
 n = 100
@@ -240,9 +240,9 @@ Der continue-Befehl sort also dafür, dass an den Anfang der Schleife gesprungen
 ### FOR-Schleife
 Die for-Schleife wird i.d.R. verwendet, wenn die Anzahl der Wiederholungen bekannt ist.  
 In Python besitzt diese Schleife die Funktion einer foreach-Schleife.  
-Mit foreach-Schleife bezeichet man eine Schlefe, die ein Array iteriert.  
+Mit foreach-Schleife bezeichnet man eine Schleife, die ein Array iteriert.  
 Das heißt es werden nacheinander alle Elemente dieser Liste ausgelesen.  
-Um den Schleifenabbruch brauch ich mich nicht zu kümmern, denn dieser ist durch die Anzahl der Elemente dieser Liste / Array gegeben.  
+Um den Schleifenabbruch brauche ich mich nicht zu kümmern, denn dieser ist durch die Anzahl der Elemente dieser Liste / Array gegeben.  
 
 ```python
 #Allgemeine Syntax:
