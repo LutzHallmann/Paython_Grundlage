@@ -7,7 +7,6 @@ Die Anzahl der Rateverusche soll gezählt und ausgegeben werden.
 Arbeiten Sie mit der randint() Funktion aus dem random-Modul, welches Sie mit "import" einbinden.
 """
 import random
-random.seed
 
 zahl = random.randint(1,6)
 versuch = -1

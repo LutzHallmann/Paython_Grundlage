@@ -22,3 +22,11 @@ for i in zk:
 print('Anzahl der Großbuchstaben:',upper)
 print('Anzahl der Kleinbuchstaben:', lower)
 print('Anzahl der Zahlen:', digit)
+
+# Python Elegant
+gb = sum(1 for c in zk if c.isupper())
+print('Anzahl der Großbuchstaben:',gb)
+kb = sum(1 for c in zk if c.islower())
+print('Anzahl der Kleinbuchstaben:',kb)
+d = sum(1 for c in zk if c.isdigit())
+print('Anzahl der Zahlen:', d)

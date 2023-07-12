@@ -6,7 +6,6 @@ Das Programm soll solange laufe, bis 6 mal die Sechs "gewürfelt wurde.
 Die Anzahl der Versuche ist auszugeben
 """
 import random
-random.seed
 
 zahl = None
 zaehler = 1

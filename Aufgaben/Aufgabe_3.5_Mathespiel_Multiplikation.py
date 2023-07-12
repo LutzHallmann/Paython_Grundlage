@@ -6,7 +6,6 @@ ist diese eingegebene Zahl nicht gleich dem vom Rechner berechneten Zahl wird ei
 Die Versuche werden gezählt
 """
 import random
-random.seed
 
 zahl1 = random.randint(1,10)
 zahl2 = random.randint(1,10)
