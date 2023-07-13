@@ -93,25 +93,25 @@
 	> was bei unsortierten Listen nicht der Fall ist.
 31. **Mit welcher Funktion kann ich mit ein iterierbaren Objekt über alle Schlüssel-Werte-Paare eines Dictionary's zurückgeben lassen?**
     > A: Mit der items() Funktion
-32. Durch welche Eigenschaften ist ein set in Python charakterisiert?
+32. **Durch welche Eigenschaften ist ein set in Python charakterisiert?**
     > A: Ist eine ungeordnete, aus einmaligen, Elementen.
-33. Wie wird ein set in der Syntax definiert?
-	> A: mit geschweiften Klamern, in der die Elemente aufgezählt werden 
-34. Mit welcher Funktion kannn ich ein set erzeugen?
+33. **Wie wird ein set in der Syntax definiert?**
+	> A: mit geschweiften Klammern, in der die Elemente aufgezählt werden 
+34. **Mit welcher Funktion kann ich ein set erzeugen?**
 	> A: Mit der Set() Funktion
-35. Mit welcher Funktion kann ich den Datentyp einer Variable prüfen
+35. **Mit welcher Funktion kann ich den Datentyp einer Variable prüfen**
     > A: Mit der type() Funktion
-36. Wie erzeuge ich eine Menge von unveränderlichen Elementen?
+36. **Wie erzeuge ich eine Menge von unveränderlichen Elementen?**
     > A: Mit der Funktion frozenset()
-37. Mit welcher Funktion kann ich Elemente einem set hinzufügen?
+37. **Mit welcher Funktion kann ich Elemente einem set hinzufügen?**
     > A: Mit der add() Funktion
-38. Wie definiere ich eine selbstdefinierte Funktion in Python?
+38. **Wie definiere ich eine selbstdefinierte Funktion in Python?**
     > A: def funktionsname(ParameterListe):
 	> 	Anweisung
 	> 	(option return parameter)
-39. Wie kann ich Standardwerte für Funktionsparameter festlegen?
+39. **Wie kann ich Standardwerte für Funktionsparameter festlegen?**
     > A: Indem ich in der Funktionsdefinition den Parametern dich ein >>=<< den entsprechenden Standardwert zuweise.
-40. Was sind lokale Variablen?
+40. **Was sind lokale Variablen?**
     > Lokale Variablen sin Variablen, die innerhalb von Funktionen definiert werden und auch nur dort gültig sind.
-41. Was sind globale Variablen?
+41. **Was sind globale Variablen?**
     > A: Globale Variablen sind Variablen, die ausserhalb von Funktionen definiert sind und sowohl in Funktionen uns außerhalb von Funktionen gültig sind.
