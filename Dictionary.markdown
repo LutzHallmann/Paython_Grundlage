@@ -1,5 +1,5 @@
 # Dictionarys
-**Dictionarys sind veränderbar!**  
+**Dictionary's sind veränderbar!**  
 Hier können wir Zuordnungen von Schlüsseln und Werte speichern (Key-Value-Paaren)
 Key-Value Paar werden durch ":" getrennt.  
 Die Liste wird in geschweifte Klammer geschrieben.  
@@ -7,7 +7,7 @@ z.B. d={"k1":"w1","k2":"w2"}
 
 > Dictionary -> dict  
 
-Ein Dictionary enthält beliebig viele Schlüssel-Werte Parrw (key-value pairs).  
+Ein Dictionary enthält beliebig viele Schlüssel-Werte-Paare (key-value pairs).  
 Der Schlüssel muss nicht unbedingt eine Zahl sein.
 ```python
 woerterbuch = {'Germany':'Deutschland','Sweden':'Schwede'}
@@ -91,14 +91,14 @@ for key in d.keys():
     print(key)
 
 # Beachte beim Kopieren wird zwar das Dictionary selbst kopiert, 
-# es handelt sich aber bei den Werten um ein Referenz auf das gleich Objekt.
+# es handelt sich aber bei den Werten um eine Referenz auf das gleiche Objekt.
 d1 = {'schluessel':[1,2,3]}
 d2 = d1.copy()
 d2['schluessel'].append(4)
 >>> d2 = {'schluessel':[1,2,3,4]}
 >>> d1 = {'schluessel':[1,2,3,4]}
 
-# Diese Funktion löscht das Schlüssel-Werte Paar mit dem Schlüssel k und gibt den entsprechenden Wert zurück
+# Diese Funktion löscht das Schlüssel-Werte-Paar mit dem Schlüssel k und gibt den entsprechenden Wert zurück
 d.pop()
 
 # Es werden alle Values durchlaufen
@@ -107,3 +107,32 @@ for v in d.values():
     print(v)
 
 ```
+In Python gibt es zwei Arten, wie man eine Kopie eines vorhandenen Objektes erstellen kann.
+1. Durch Zuweisen "="
+2. Durch Verwenden von copy()
+
+Der Unterschied zwischen beiden hängt davon ab, ob man eine tiefe Kopie oder eine flache Kopie des Objektes erstellen möchte.
+
+> * zu 1.) Wenn mann eine Variable einer anderen Variable zuweist, erstellen Sie keine neue Kopie.  
+> * Sie erstellen nur eine Referenz auf das ursprüngliche Objekt.  
+> * Das bedeutet, dass Änderungen, die man an einer Variable vornimmt, sich auf die anderen auswirkt, wil beide auf die gleiche Speicherstelle / Objekt zeigen.
+>   * liste1 = [1,2,3]
+>   * liste2 = liste1
+>   * liste2.append(4)
+>   * print(liste1) # Ausgabe [1,2,3,4]
+
+> * zu 2.) Die copy() Funktion erstellt eine "flache Kopie" des Objektes.  
+> Das bedeutet, dass sie ein neues Objekt erstellt, das eine Kopie der ursprünglichen Elemente enthält.  
+> Aber wenn die Elemente des Objektes selbst veränderbare Listen oder Wörterbücher sind, dann werden diese Elemente nicht kopiert, sondern referenziert
+>   * liste1 = [1,2,[3,4]]
+>   * liste2 = copy(liste1)
+>   * liste2.append(5)
+>   * print(liste1) # Ausgabe [1,2,[3,4,5]]
+
+>* Wenn Sie eine tiefe Kopie erstellen möchten, bei der auch veränderbare Elemente kopiert werden,  
+>kann man die Funktion deepcopy() verwenden.  
+>YDamit ist sichergestellt, dass das ursprüngliche Objekt in keiner Weise durch Änderungen am kopierten Objekt beinflusst wird.
+>  * liste1 = [1,2,[3,4]]
+>  * liste2 = deepcopy(liste1)
+>  * liste2.append(5)
+>  * print(liste1) # Ausgabe [1,2,[3,4]]

@@ -38,10 +38,10 @@
 12. **Mit welcher Syntax kann ich eine Liste definieren?**
 	> A: Mit eckigen Klammern, in denen die Elemente kommagetrennt aufgelistet werden.
 
-13. ** Welche Wirkung hat die >>break<< Anweisung?**
+13. **Welche Wirkung hat die >>break<< Anweisung?**
     > A: An der Stelle, an der die Anweisung auftritt, wird die Schleife abgebrochen.
 
-14. ** Welche Wirkung hat die continue Anweisung?**
+14. **Welche Wirkung hat die continue Anweisung?**
     > A: An der Stelle, wo die continue Anweisung auftritt, werden alle nachfolgenden Befehle in der Schleife ignoriert  
 	> und es wird in die nächste Wiederholung der Schleife an den Schleifenkopf gesprungen.
 	
@@ -53,7 +53,7 @@
 16. **Mit welcher Funktion kann ich die Länge einer Liste ermitteln?**
 	> A: Mit der len() Funktion
 
-17. **Mit wlecher Funktion kann ich Benutzereingaben realisieren?**
+17. **Mit welcher Funktion kann ich Benutzereingaben realisieren?**
 	> A: Mit der input() Funktion
 
 18. **Mit welcher Funktion kann ich ein Element einer Liste entfernen?**

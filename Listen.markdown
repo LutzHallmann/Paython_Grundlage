@@ -64,4 +64,6 @@ Listen bieten aber noch einige sehr komfortabel Funktionen
     
 # Wie oft ein Wert in einer Liste vorkommt
     einkaufsliste.count("Fisch")
+
+
 ```

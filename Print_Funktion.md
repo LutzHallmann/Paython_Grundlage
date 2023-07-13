@@ -32,7 +32,7 @@ fh=open("daten.txt","w")
 
 Die print() Funktion kennt verschiedene Parameter
 1. **sep**  
-    Dieser Parameter definiert eine Zeichenkette, die als "Trennzeichen" fungiert, wleche die Ausgabe trennt.
+    Dieser Parameter definiert eine Zeichenkette, die als "Trennzeichen" fungiert, welche die Ausgabe trennt.
 2. **end**  
     Mit diesem Parameter kann ich den Zeilenabschluss definieren. Standardmäßig ist es ein Zeilenumbruch.  
     Ich kann diesen durch eine beliebige Zeichenkette ersetzen.  
