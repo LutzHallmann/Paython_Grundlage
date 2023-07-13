@@ -47,6 +47,7 @@ quadrat_ergebnis = quadrat(3)
 print(quadrat_ergebnis)
 >>> 9
 ```
+---
 ### Variable Anzahl von Parametern
 Üblicherweise ist die Anzahl der Parameter einer Funktion bekannt.  
 Es kann aber auch Anwendungsfälle geben, die mit einer unbekannten Anzahl an Parameter einer Funktion arbeiten müssen.  
@@ -61,7 +62,7 @@ orte('Berlin')
 
 orte('Berlin','Freiburg','Paris')
 ```
-
+---
 ### Lokale und Globale Variablen
 
 #### Folgendes Beispiel (global): 
@@ -93,8 +94,8 @@ f1() # es wird die 6 ausgegeben
 print(y) # es wird die 9 ausgegeben
 # Diese zweifach definierten Variable, sind völlig unabhängig voneinander.
 ```
-
-#### Optionale Parameter
+---
+### Optionale Parameter
 Innerhalb der Signatur einer Funktion kann eine Parameterliste definiert werden.  
 Dabei ist es möglich für jeden Parameter einen Standardwert zu definieren.  
 Der Standardwert kommt immer dann zum Tragen, wenn der Parameter nicht übergeben wird.
@@ -104,6 +105,6 @@ def f(a,b,c= -1,d=0):
 f(6,7,8,4)      # Ausgabe 6 7 8 4
 f(6,7,8)        # Ausgabe 6 7 8 0
 f(a=6,b=6,d=9)  # Ausgabe 6 7 -1 9
-f(6)            # Fehler weil b fehlt
-f(b=6,c=9)      # Fehler weil a fehlt
+f(6)            # Fehler, weil b fehlt
+f(b=6,c=9)      # Fehler, weil a fehlt
 ```
