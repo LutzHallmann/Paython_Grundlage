@@ -107,7 +107,30 @@ zeichenfolge[4]
 | Elemente     | a  | b  | c  | d  | e  | f  |
 | Index hinten | -6 | -5 | -4 | -3 | -2 | -1 |
 
-### Teilsequenz:
+### Teilsequenz mit dem Teilbereichsoperator:
+Mit dem Teilbereichsoperator kann ich Teile eines sequenztiellen Datentyps ausschneiden.  
+Im Falle eines Strings erhält man einen Teilstring (Slicing).  
+Die Werte werden in einer eckigen Klammer notiert.  
+Es werden mindestens zwei Werte erwartet.
+```python
+str[anfangsindex,endindex,schrittweite]
+# Doppelpunkt heißt nimm alles
+# Minus heißt von hinten
+
+#Beispiel 1:
+text = "Hallo Welt"
+text[1:5] #Ausgabe: allo 
+
+# Beispiel 2:
+# Wenn wir eine -1 in der Schritweite wählen, gehen wir immer vom Ende her an die Zeichenkette.
+# Lässt man Anfangs und End-Index weg erhält man den ganzen String.
+text = "Hallo Welt"
+text[:]     # Ausgabe: 'Hallo Welt
+text[6:]    # Ausgabe: 'Welt'
+text[:5]    # Ausgabe 'Hallo'
+text[0:-6]  # Ausgabe: 'Hall
+
+```
 ```python
 # Zwischen einen bestimmten Indexbereich
 zeichenfolge = "abcdefg"
