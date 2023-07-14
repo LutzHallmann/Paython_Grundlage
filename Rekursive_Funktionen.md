@@ -1,6 +1,6 @@
 # Rekursive Funktionen
 Rekursive Funktionen sind ein grundsätzliches Prinzip.  
-Der Name stammt aus dem Lateinischen "reurrere" dt. zurücklaufen.  
+Der Name stammt aus dem Lateinischen "recurrere" dt. zurücklaufen.  
 In unserem Zusammenhang, dass sich eine Funktion immer wieder selbst aufruft.  
 Beispiel dafür ist die Berechnung der Fakultät.  
 
