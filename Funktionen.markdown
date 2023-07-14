@@ -24,7 +24,7 @@ def funktionsname(parameter1,parameter2,...,parameterN):
 3. Funktionen ohne Übergabe und mit Rückgabewert
 4. Funktionen mit Übergabe und mit Rückgabewert
 ```python
-#Funktionsdefinition
+#Funktionsdefinition:
 def ausgabe():
         print('Hallo Funktion')
 
