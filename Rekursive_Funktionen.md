@@ -1,0 +1,32 @@
+# Rekursive Funktionen
+Rekursive Funktionen sind ein grundsätzliches Prinzip.  
+Der Name stammt aus dem Lateinischen "reurrere" dt. zurücklaufen.  
+In unserem Zusammenhang, dass sich eine Funktion immer wieder selbst aufruft.  
+Beispiel dafür ist die Berechnung der Fakultät.  
+
+Eine Funktion ruft sich also mehrmal selbst aus.  
+Es gibt natürlich für diese (Schleife) eine Abbruchbedingung, diese muss vorhanden sein, sonst läuft das Programm unkontrolliert weiter.
+
+> 4! = 4 * 3!
+> 3! = 3 * 2!
+> 2! = 2 * 1
+> 
+> 4! = 4 * 3 * 2 * 1
+
+```python
+# Beispiel
+def fakultaet(n):
+    print('Die Funktion wurde mit n = ' + str(n) + ' aufgerufen')
+    if n == 1:
+        return 1
+    else:
+        erg = n * fakultaet(n-1)
+        print('Zwischenergebnis = ' + str(erg) + ' aufgerufen')
+        return erg
+
+# Anwendung z.B.
+print(fakultaet(5))
+
+```
+>Das Prinzip wird immer angewendet, wenn Bäume durchlaufen werden sollen.  
+>Auch bei neuronalen Netzen ist es relevant.

@@ -4,8 +4,7 @@ Dateien sollten , wenn man darauf zugreifen muss nicht zu groß werden. (Abgeseh
 Die Datenmenge ist hierbei begrenzt, bei größeren Datenmengen sind Datenbanken die erste Wahl.  
 Es gibt grundsätzlich zwei Verfahren, wie man Dateien handhaben kann.  
 1. Sequenzieller Zugriff ohne feste Datensatzlänge
-2. Wahlfreien Zugriff mit fester Datensatzlänge 
-(Vorteil: Ich muss nicht alle Datensätze einlesen, wenn ich auf einen beliebigen Datensatz zugreifen möchte)
+2. Wahlfreien Zugriff mit fester Datensatzlänge (Vorteil: Ich muss nicht alle Datensätze einlesen, wenn ich auf einen beliebigen Datensatz zugreifen möchte)
 
 > zu 1.
 > Für das Lesen von Daten benötigen wir die open() Funktion.  
