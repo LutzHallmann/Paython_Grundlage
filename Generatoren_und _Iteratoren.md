@@ -41,4 +41,93 @@ while True
         break
     print('Stadt: ' + stadt)
 ```
-##
+---
+## Eigene Generatoren erzeugen
+Generatoren sehen in der Regel aus wie normale selbst definierte Funktionen.  
+Man kann sie dadurch unterscheiden,, dass sie die yield Anweisung beihalten.  
+Eine yield Anweisung verwandelt eine Funktion in einen Generator.  
+Eine Generator-Funktion liefert immer ein Generator-Objekt zurück.
+Die Ausführung des Codes wird unterbrochen, wenn eine yield Anweisung erreicht ist.  
+Wenn man next() für das Generator-Objekt erneut aufruft, macht die Ausführung direkt nach der yield Anweisung im Code weiter.
+
+> Bezüglich der Variable:  
+> Alle lokalen Variablen sind noch vorhanden, da diese zwischen den Aufrufen automatisch gespeichert bleiben.
+
+```python
+# Beispiel zum Kennlernen der Mechanik
+def generator():
+    x = 1
+    print('vor dem ersten yield!')
+    yield x     # Aus der Funktion rausspringen und wartet auf den nächsten Aufruf    
+    x = 2
+    yield x
+    x = 3
+    print('Ende kein weiteres yield!')
+    yield x
+
+try:
+    print('Start')
+    iterator_objekt = generator()
+    print(iterator_objekt)
+    print('Iterator erzeugt')
+    print(next(iterator_objekt))
+    print('Erste next')
+    print('Zweite next')
+    print('Dritte next')
+    print('Vierte next')
+except StopIteration:
+    print('Ende')
+    
+# Generator Funktion aufrufen
+generator()
+
+# Ausgabe:
+"""
+Start
+<generator object generator at 0x0000023CDE189BD0>
+Iterator erzeugt
+vor dem ersten yield!
+1
+Erste next
+Zweite next
+Dritte next
+Vierte next
+"""
+```
+```python
+def allesFinden(heuhaufen,nadel,pos=0):
+    pos = heuhaufen.find(nadel,pos)
+    positions=[]
+    while pos != -1: # Solange sucht, wie Stellen gefunden werden.
+            positions.append(pos) # Hängt die gefundene Postion an die Liste positons
+            pos=heuhaufen.find(nadel,pos+1) # erneute Such mit einem Offset. Als ab der nächsten Stelle wo es gefunden wurde.
+    return positions # gibt die Liste zurück
+
+text="Das ist ein Beispieltext mit einer Funktion damit man eine Stelle wiederfindet"
+
+print(allesFinden(text,"ein")) # Funktionsaufruf mit zwei Parametern. 1. den Text, 2. den Suchbegriff
+
+# Ausgabe:
+# [8, 29, 54] # Das sind die Positionen an denen der Suchbegriff (hier: 'ein') gefunden wurde
+```
+```python
+# Beispiel als Der Suchfunktion als Generator umgesetzt
+def allesFinden(heuhaufen,nadel,pos=0):
+    pos = heuhaufen.find(nadel,pos)
+    while pos != -1: # Solange sucht, wie Stellen gefunden werden.
+            pos=heuhaufen.find(nadel,pos+1) # erneute Such mit einem Offset. Als ab der nächsten Stelle wo es gefunden wurde.
+            yield pos
+text="Das ist ein Beispieltext mit einer Funktion damit man eine Stelle wiederfindet"
+
+positionen = allesFinden(text, 'ein')
+print(positionen,type(positionen))
+
+for index,position in enumerate(positionen):
+    print(f'{index+1:d}. Position : {position:d}')
+
+# Ausgabe:
+# <generator object allesFinden at 0x000001CDF8B69AF0> <class 'generator'>
+# 1. Position : 29
+# 2. Position : 54
+# 3. Position : -1
+```
