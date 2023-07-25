@@ -29,15 +29,22 @@ class Wuerfel():
         self.MinAugen = Wuerfel.INT_MinAugen
         self.MaxAugen = Wuerfel.INT_MaxAugen
     """
-    def __init__(self, Param: int):             # Wir erweitern um die Übergabe eines Parameter mit der Absicht,
-                                                # dass dieser eine Ganzzahl sein soll.
-                                                # Man nennt das "Annotation"
+    def __init__(self, MinAugen: int, MaxAugen: int):   # Wir erweitern um die Übergabe eines Parameter mit der Absicht,
+                                                        # dass dieser eine Ganzzahl sein soll.
+                                                        # Man nennt das "Annotation"
         # Wir erzeugen unsere Instanzvariablen und weisen diesen unsere Werte der Klassenvariablen zu
-        self.MinAugen = Wuerfel.INT_MinAugen
+       #self.MinAugen = Wuerfel.INT_MinAugen
         try:
-            self.MaxAugen = int(Param)
-        except:
-            return False
+            self.MinAugen = int(MinAugen)
+            self.MaxAugen = int(MaxAugen)
+            if MaxAugen <= MinAugen:
+                raise ValueError('MaxAugenzahl ist kleiner / gleich MinAugenzahl')
+        except ValueError:
+            return None
+        """
+        Mit unserer Exception wird die Erzeugung des Objekts NICHT verhindert!!!
+        
+        """
 
     def wuerfeln(self):
         # Das Würfeln ist ja das erzeugen einer Zufallszahl
@@ -62,6 +69,6 @@ Wenn wir aus der Klasse ein Objekt erzeugen, könne wir auf die Klassenvariablen
 Next Step:
 Wir haben unseren Konstruktor um einen Parameter ergänzt
 '''
-OBJ_MyWuerfel = Wuerfel(5)
+OBJ_MyWuerfel = Wuerfel(5,3)
 print(OBJ_MyWuerfel.wuerfeln())
 
