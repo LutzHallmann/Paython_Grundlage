@@ -7,14 +7,14 @@ Wenn die Liste leer ist, soll das Programm eine entsprechende Meldung ausgegeben
 """
 # Zahlenlisten automatisch mit Zufallszahlen generieren und in der Datei "Aufgabe_4.1_Zahlenlisten.txt schreiben
 import random
-datei = open('Aufgabe_4.1_Zahlenliste.txt','w')
+datei = open('Aufgabe_4.1_Zahlenliste.txt', 'w')
 for i in range(1,1000,1):
     i += 1
     datei.write(str(random.randint(1,10000))+';')
 datei.close()
 
 # Die oben erstellte generierte Liste einlesen
-datei = open('Aufgabe_4.1_Zahlenliste.txt','r')
+datei = open('Aufgabe_4.1_Zahlenliste.txt', 'r')
 zahlenliste = []
 zahlenlisteInt =[]
 for zahlenListe in datei:
