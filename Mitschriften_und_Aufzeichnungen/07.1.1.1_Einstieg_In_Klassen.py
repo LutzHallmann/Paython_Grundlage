@@ -40,7 +40,7 @@ print(OBJ_MyObj.data)
 OBJ_MyObj2 = MyClass(5,10)
 print(OBJ_MyObj2.data)
 
-# Wir lassen uns die die Werte der Klassenvariablen ausgeben - sind natürlich identisch
+# Wir lassen uns die Werte der Klassenvariablen ausgeben - sind natürlich identisch
 print(OBJ_MyObj.INT_MyVar1, OBJ_MyObj2.INT_MyVar1)
 
 # Wir verändern den Wert der Klassenvariablen
@@ -69,7 +69,7 @@ print(OBJ_MyObj.new)
 # Wir können die Absicht des Programmierers, dass eine Variable oder Methode Private oder Restricted sein soll durch Underscore darstellen.
 # Dazu wurden Änderungen an der Klasse MyClass durchgeführt.
 
-# Wir haben die Änderung durchgeführt und die private Variablen __divisor erstellt sowie die restricted Variable _divident
+# Wir haben die Änderung durchgeführt und die private Variablen __divisor erstellt sowie die restricted Variable _dividend
 print(OBJ_MyObj._divident)
 print(OBJ_MyObj._MyClass__divisor)
 
