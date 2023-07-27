@@ -6,6 +6,9 @@ class Wuerfel():
     INT_MinAugen = 1    # kleinste Augenzahl unseres Würfels
     INT_MaxAugen = 6    # höchste Augenzahl unseres Würfels
     INT_SummeAugenzahlWuerfe = 0
+    LIS_Wurfergebnisse =[]
+    DIC_JsonAusgabe = {'Wurfergebnisse':LIS_Wurfergebnisse}
+    DIC_JsonEingabe = {}
 
     def __init__(self, AnzahlWuerfe = 10):
         self._MinAugen = Wuerfel.INT_MinAugen
@@ -35,9 +38,10 @@ class Wuerfel():
         import random
         random.seed()
         for _ in range(1, self._AnzahlWuerfe + 1):
-            augenzahl = random.randint(self._MinAugen, self._MaxAugen)
-            self.INT_SummeAugenzahlWuerfe += augenzahl
-            print(augenzahl)
+            self.LIS_Wurfergebnisse.append(random.randint(self._MinAugen, self._MaxAugen))
+            #augenzahl = random.randint(self._MinAugen, self._MaxAugen)
+            #self.INT_SummeAugenzahlWuerfe += augenzahl
+            print(self.LIS_Wurfergebnisse)
         return
 
     def durchschnitt(self):
@@ -45,7 +49,26 @@ class Wuerfel():
         return(f'Der Durchschnitt der geworfen Augenzahlen beträgt: {durchschnitt}')
 
     def summe(self):
-        return(f'Summe aller Würfe ist: {self.INT_SummeAugenzahlWuerfe}')
+        self.INT_SummeAugenzahlWuerfe = sum(self.LIS_Wurfergebnisse)
+        return(f'Summe aller Würfe in der Runde ist: {self.INT_SummeAugenzahlWuerfe}')
+
+    def statistik(self):
+        self.readJSON()
+        #for i in :
+        #    print(self.DIC_JsonEingabe)
+        print(f'statistik Print {self.DIC_JsonEingabe}')
+
+    def writeJson(self):
+        import json
+        jsonWriter = open('WuerfelErebnisse.json', 'at')
+        jsonWriter.write(json.dumps(self.DIC_JsonAusgabe))
+        jsonWriter.close()
+
+    def readJSON(self):
+        import json
+        jsonReader = open('WuerfelErebnisse.json', 'rt')
+        self.DIC_JsonEingabe = jsonReader.read()
+        jsonReader.close()
 
 
 OBJ_MyWuerfel = Wuerfel(6)  # Erzeugung des Objekts ohne Parameter
@@ -59,3 +82,5 @@ OBJ_MyWuerfel.MaxAugen = 6
 print(OBJ_MyWuerfel.wuerfeln())
 print(OBJ_MyWuerfel.summe())
 print(OBJ_MyWuerfel.durchschnitt())
+OBJ_MyWuerfel.writeJson()
+OBJ_MyWuerfel.statistik()

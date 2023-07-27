@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<meatransmission version="2" timestamp="2022-03-24-13:43:16" timezone="utc" type="sek">
+    <weather>
+        <wind interval="3" unit="sek" timeoffset="0" runway="typical">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60">Haha</speed>
+            <direction value="320" status="ok" validity="60"/>
+        </wind>
+        <wind interval="3" unit="sek" timeoffset="0" runway="lb1">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="320" status="ok" validity="60"/>
+            <longitudinal dir="tail" value="01" status="ok" validity="60"/>
+            <cross dir="left" value="02" status="ok" validity="60"/>
+        </wind>
+        <wind interval="3" unit="sek" timeoffset="0" runway="lb2">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <longitudinal dir="tail" value="07" status="ok" validity="60"/>
+            <cross dir="left" value="01" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="min" timeoffset="0" runway="typical">
+            <speed value="03" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="340" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="min" timeoffset="0" runway="lb1">
+            <speed value="03" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="340" status="ok" validity="60"/>
+            <longitudinal dir="tail" value="01" status="ok" validity="60"/>
+            <cross dir="left" value="04" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="min" timeoffset="0" runway="lb2">
+            <speed value="03" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <longitudinal dir="tail" value="07" status="ok" validity="60"/>
+            <cross dir="left" value="02" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="2" unit="min" timeoffset="0" runway="typical">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="340" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="2" unit="min" timeoffset="0" runway="lb1">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="340" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="2" unit="min" timeoffset="0" runway="lb2">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="VRB" status="ok" validity="60"/>
+            <gust value="04" status="ok" validity="60"/>
+        </wind>
+        <wind interval="10" unit="min" timeoffset="0" runway="typical">
+            <speed value="04" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="360" status="ok" validity="60"/>
+            <gust value="08" status="ok" validity="60"/>
+        </wind>
+        <wind interval="10" unit="min" timeoffset="0" runway="lb1">
+            <speed value="04" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="360" status="ok" validity="60"/>
+            <gust value="08" status="ok" validity="60"/>
+        </wind>
+        <wind interval="10" unit="min" timeoffset="0" runway="lb2">
+            <speed value="02" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="020" status="ok" validity="60"/>
+            <gust value="06" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="h" timeoffset="0" runway="typical">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="h" timeoffset="0" runway="lb1">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="1" unit="h" timeoffset="0" runway="lb2">
+            <speed value="04" unit="kt" status="ok" spec="avg" validity="60"/>
+            <gust value="07" status="ok" validity="60"/>
+        </wind>
+        <wind interval="3" unit="h" timeoffset="0" runway="typical">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="3" unit="h" timeoffset="0" runway="lb1">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="3" unit="h" timeoffset="0" runway="lb2">
+            <speed value="05" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="120" status="ok" validity="60"/>
+            <gust value="07" status="ok" validity="60"/>
+        </wind>
+        <wind interval="6" unit="h" timeoffset="0" runway="typical">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="6" unit="h" timeoffset="0" runway="lb1">
+            <speed value="07" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="040" status="ok" validity="60"/>
+            <gust value="10" status="ok" validity="60"/>
+        </wind>
+        <wind interval="6" unit="h" timeoffset="0" runway="lb2">
+            <speed value="05" unit="kt" status="ok" spec="avg" validity="60"/>
+            <direction value="120" status="ok" validity="60"/>
+            <gust value="07" status="ok" validity="60"/>
+        </wind>
+        <wind interval="24" unit="h" timeoffset="0" runway="typical">
+            <speed value="03" unit="ms" status="ok" spec="max" validity="60"/>
+            <gust value="06" status="ok" validity="60"/>
+        </wind>
+        <wind interval="24" unit="h" timeoffset="0" runway="lb1">
+            <speed value="03" unit="ms" status="ok" spec="max" validity="60"/>
+            <gust value="07" status="ok" validity="60"/>
+        </wind>
+        <wind interval="24" unit="h" timeoffset="0" runway="lb2">
+            <speed value="02" unit="ms" status="ok" spec="max" validity="60"/>
+            <gust value="05" status="ok" validity="60"/>
+        </wind>
+        <rvr interval="1" unit="min" spec="avg" runway="lb1">
+            <servicedirection value="4300" unit="m" status="ok" validity="60">
+                <runwaydirection value="08" status="ok" validity="60"/>
+                <trend value="n" status="ok" validity="60"/>
+            </servicedirection>
+            <midposition value="////" unit="m" status="error" validity="60">
+                <trend value="/" status="error" validity="60"/>
+            </midposition>
+            <oppositedirection value="4600" unit="m" status="ok" validity="60">
+                <runwaydirection value="26" status="ok" validity="60"/>
+                <trend value="u" status="ok" validity="60"/>
+            </oppositedirection>
+        </rvr>
+        <rvr interval="1" unit="min" spec="avg" runway="lb2">
+            <servicedirection value="4600" unit="m" status="ok" validity="60">
+                <runwaydirection value="21" status="ok" validity="60"/>
+                <trend value="u" status="ok" validity="60"/>
+            </servicedirection>
+            <midposition value="////" unit="m" status="error" validity="60">
+                <trend value="/" status="error" validity="60"/>
+            </midposition>
+            <oppositedirection value="////" unit="m" status="error" validity="60">
+                <runwaydirection value="03" status="ok" validity="60"/>
+                <trend value="/" status="error" validity="60"/>
+            </oppositedirection>
+        </rvr>
+        <mor interval="1" unit="min" spec="avg" runway="lb1">
+            <servicedirection value="04300" unit="m" status="ok" validity="60">
+                <runwaydirection value="08" status="ok" validity="60"/>
+            </servicedirection>
+            <midposition value="/////" unit="m" status="error" validity="60"/>
+            <oppositedirection value="04600" unit="m" status="ok" validity="60">
+                <runwaydirection value="26" status="ok" validity="60"/>
+            </oppositedirection>
+        </mor>
+        <mor interval="1" unit="min" spec="avg" runway="lb2">
+            <servicedirection value="04600" unit="m" status="ok" validity="60">
+                <runwaydirection value="21" status="ok" validity="60"/>
+            </servicedirection>
+            <midposition value="/////" unit="m" status="error" validity="60"/>
+            <oppositedirection value="/////" unit="m" status="error" validity="60">
+                <runwaydirection value="03" status="ok" validity="60"/>
+            </oppositedirection>
+        </mor>
+        <temperature interval="1" unit="min">
+            <air location="2m" value="16,3" status="ok" spec="avg" sensor="1" validity="60"/>
+            <air location="5cm" value="19,0" status="ok" spec="avg" sensor="1" validity="60"/>
+            <ground location="5cm" value="08,4" status="ok" validity="60"/>
+            <ground location="10cm" value="08,7" status="ok" validity="60"/>
+            <ground location="20cm" value="09,0" status="ok" validity="60"/>
+            <ground location="50cm" value="07,0" status="ok" validity="60"/>
+            <ground location="100cm" value="06,7" status="ok" validity="60"/>
+            <runway value="/" status="error" runway="lb1" validity="60"/>
+        </temperature>
+        <temperature interval="5" unit="min">
+            <air location="2m" value="16,5" status="ok" spec="avg" sensor="1" validity="60"/>
+            <dewpoint value="-00,4" status="ok" validity="60"/>
+        </temperature>
+        <temperature interval="0" unit="h">
+            <air location="2m" value="02,6" status="ok" spec="min" sensor="1" validity="60"/>
+            <air location="2m" value="17,2" status="ok" spec="max" sensor="1" validity="60"/>
+        </temperature>
+        <temperature interval="12" unit="h">
+            <air location="2m" value="02,6" status="ok" spec="min" sensor="1" validity="60"/>
+            <air location="2m" value="17,2" status="ok" spec="max" sensor="1" validity="60"/>
+            <air location="5cm" value="-00,6" status="ok" spec="min" sensor="1" validity="60"/>
+        </temperature>
+        <temperature interval="24" unit="h">
+            <air location="5cm" value="-04,9" status="ok" spec="min" sensor="1" validity="60">
+                <coverage value="/" status="error" validity="60"/>
+            </air>
+            <air location="2m" value="09,2" status="ok" spec="avg" sensor="1" validity="60"/>
+            <air location="2m" value="-00,7" status="ok" spec="min" sensor="1" validity="60"/>
+            <air location="2m" value="18,8" status="ok" spec="max" sensor="1" validity="60"/>
+        </temperature>
+        <airpressure interval="1" unit="min" value="1020,2" status="ok" spec="qm" validity="60"/>
+        <airpressure interval="1" unit="min" value="-36" status="ok" spec="da" validity="60"/>
+        <airpressure interval="1" unit="min" value="1021,7" status="ok" spec="qfe" validity="60"/>
+        <airpressure interval="1" unit="min" value="-229,4" status="ok" spec="qne" validity="60"/>
+        <airpressure interval="1" unit="min" value="1028" status="ok" spec="qnh" validity="60"/>
+        <airpressure interval="1" unit="min" value="30,36" status="ok" spec="qnh_in" validity="60"/>
+        <airpressure interval="1" unit="min" value="1028,6" status="ok" spec="qff" validity="60"/>
+        <airpressure interval="3" unit="h" value="8" status="ok" spec="a" validity="60"/>
+        <airpressure interval="3" unit="h" value="-1,4" status="ok" spec="ppp" validity="60"/>
+        <humidity interval="5" unit="min" value="32" status="ok" spec="avg" validity="60"/>
+        <clouds interval="30" unit="sek" runway="lb1" direction="service">
+            <layer number="1" value="NODET" status="ok" validity="60"/>
+            <layer number="2" value="NODET" status="ok" validity="60"/>
+            <layer number="3" value="NODET" status="ok" validity="60"/>
+        </clouds>
+        <clouds interval="30" unit="sek" runway="lb1" direction="opposite">
+            <layer number="1" value="NODET" status="ok" validity="60"/>
+            <layer number="2" value="NODET" status="ok" validity="60"/>
+            <layer number="3" value="NODET" status="ok" validity="60"/>
+        </clouds>
+        <clouds interval="30" unit="sek" runway="lb2" direction="service">
+            <layer number="1" value="NODET" status="ok" validity="60"/>
+            <layer number="2" value="NODET" status="ok" validity="60"/>
+            <layer number="3" value="NODET" status="ok" validity="60"/>
+        </clouds>
+        <clouds interval="30" unit="sek" runway="lb2" direction="opposite">
+            <layer number="1" value="NODET" status="ok" validity="60"/>
+            <layer number="2" value="NODET" status="ok" validity="60"/>
+            <layer number="3" value="NODET" status="ok" validity="60"/>
+        </clouds>
+        <radiation interval="1" unit="h">
+            <heat value="/" status="error" validity="60"/>
+        </radiation>
+        <radiation interval="24" unit="h">
+            <heat value="/" status="error" validity="60"/>
+        </radiation>
+        <precipitation interval="1" unit="min" value="-" status="ok" spec="sum" validity="60"/>
+        <precipitation interval="10" unit="min" value="-" status="ok" spec="sum" validity="60"/>
+        <precipitation interval="1" unit="h" value="-" status="ok" spec="sum" validity="60">
+            <duration value="/" status="error" validity="60"/>
+        </precipitation>
+        <precipitation interval="6" unit="h" value="-" status="ok" spec="sum" validity="60">
+            <type value="/" status="error" validity="60"/>
+        </precipitation>
+        <precipitation interval="12" unit="h" value="-" status="ok" spec="sum" validity="60"/>
+        <precipitation interval="24" unit="h" value="-" status="ok" spec="sum" validity="60"/>
+    </weather>
+    <technical>
+        <runwaydirection value="08" status="ok" runway="lb1" validity="60"/>
+        <runwaydirection value="21" status="ok" runway="lb2" validity="60"/>
+        <runwaystatus value="aktiv" runway="lb1" validity="60"/>
+        <runwaystatus value="inaktiv" runway="lb2" validity="60"/>
+        <runwayname value="landebahn1" runway="lb1" validity="60"/>
+        <runwayname value="INAKTIV" runway="lb2" validity="60"/>
+    </technical>
+</meatransmission>

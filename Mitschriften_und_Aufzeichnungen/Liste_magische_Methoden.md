@@ -1,0 +1,1 @@
+# Auflistung der magischen Mehtoden

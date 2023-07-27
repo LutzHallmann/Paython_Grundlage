@@ -115,3 +115,33 @@
     > Lokale Variablen sin Variablen, die innerhalb von Funktionen definiert werden und auch nur dort gültig sind.
 41. **Was sind globale Variablen?**
     > A: Globale Variablen sind Variablen, die ausserhalb von Funktionen definiert sind und sowohl in Funktionen uns außerhalb von Funktionen gültig sind.
+42. **Was ist der Unterschied zwischen Klassen und Objekten?**
+	> Eine Klasse ist das Template (Vorlage)... ein Objekt ist eine instantiierte Klasse
+43. Was ist der Unterschied zwischen einer Funktion und einer Methode?
+    > Funktionell: Keiner  
+	> Funktionen heißen Methoden, wenn sie in einer Klasse definiert wurden
+44. Was ist der Unterschied zwischen einer Klassenvariablen und einer Instanzvariablen?
+    > Klassenvariablen sind in jedem Objekt verfügbar.  
+	> Instanzvariablen sind einem Objekt zugeordnet und erst nach einer instantiierung einer Klasse verfügbar.
+45. Gibt es Unterschiede ind er Zugriffsart auf Klassenvariablen im Zustand "Klasse" un im Zustand "Objekt"?
+    > Sobald eine Klasse instantiiert wurde, MUSS mit dem Klassennamen auf die Variable zugegriffen werden.  
+	> Im Zustand als Klasse ist das nicht notwendig
+46. Wenn in einer Klasse eine statische Methode vorhanden ist, muss auch diese bei einer Instantiierung den Klassennamen voranstellen,
+	wenn auf eine Klassenvariable zugegriffen wird?
+    > Es muss nicht gemacht werden, das die Methode in der Klasse verbleibt.
+	>> Aber: Da wir sicherstellen wollen, dass wir keinen Fehler erhalten, sprechen wir Klassenvariablen IMMER über den Klassennamen an!!
+47. ```python
+    OBJ_MyClass.variable = 10
+    ```
+    1. Was passiert, wenn die Instanzvariable noch nicht vorhanden ist?
+    2. Was passiert, wenn eine gleichnamige Klassenvariable vorhanden ist?
+    > zu i. Sie wird erstellt  
+	> zu ii. Sie wird trotzdem erstellt
+48. Was ist ein "Setter"?
+    > Eine Methode in einer Klasse, die von außen genutzt werden soll um eine Instanzvariable zu setzen.
+	> Das Gegenteil ist der Getter, der angesprochen werden soll, um eine kontrollierte Ausgabe von Instanzvariablen zu erhalten.
+49. Was ist "self" und ist "self" fix oder kann "self" umbenannt werden?
+    > Natürlich kann in Python "self" umbenannt werden.  
+	> Sollte aber nicht getan werden, da es eine "Best Practice" darstellt und wir in unserer Programmierung
+	> übergreifend eine Gemeinsame Benennung haben sollten.  
+	> Ist eine Referenz auf das Objekt selbst
